@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
 
-
+* {
+    margin: 0;
+    
+    border: none;
+}
 body {
     font-family: Fuzzy Bubbles, sans-serif;
     font: weight 400px;
@@ -9,6 +13,10 @@ body {
 }
 .footer {
     background-color: #fbc4ab;
+    clear: both;
+    position: relative;
+    height: 50px;
+    margin-top: -0px;
 }
 .header {
     background-color: #fbc4ab;
@@ -16,6 +24,7 @@ body {
     padding-top: 10px;
 
 }
+/* styling for the gaming area*/
 .game-area {
    background-color: #ddbea9;
    position: relative;
@@ -24,13 +33,13 @@ body {
    left: 170px;
 }
 .player-screen {
-    height: 400px;
+    height: 350px;
     width: 400px;
     padding: 30px 40px;
     position: absolute;
     left: 60px;
     
-    background-color: red;
+    background-color: #ffe8d6;
 }
 #buttons {
  
@@ -40,6 +49,8 @@ body {
     text-align: center;
     bottom: 50px;
 }
+/*hoover effect on player buttons*/
+
  #rock:hover{
     background-color: #fbc4ab}
  #paper:hover{
@@ -47,7 +58,7 @@ body {
     background-color: #fbc4ab;
 }
 #scissor:hover{
-    background-color: #fbc4ab;
+    background-color:#fbc4ab;;
 }
 
  #scissor{
@@ -73,12 +84,34 @@ body {
    font-size: 110%;
 }
 .computer-player{
-    height: 400px;
+    height: 350px;
     width: 400px;
     padding: 30px 40px;
     position: absolute;
     right: 60px;
     top: 20px;
     
-    background-color: red;
+    background-color: #ffe8d6;
 }
+.score-area > div{
+    width: 50%;
+    left: 65px;
+    top: 420px;
+}
+.points-one{
+    position: relative;
+    
+    
+    float: left;
+    
+    
+    clear: both;
+   
+}
+
+ .points-two{
+    position: relative;
+   
+   
+    display: inline;
+    clear: both;}
