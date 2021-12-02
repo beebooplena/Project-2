@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
+
 body {
     font-family: Fuzzy Bubbles, sans-serif;
     font: weight 400px;
@@ -16,7 +12,56 @@ body {
 }
 .header {
     background-color: #fbc4ab;
+    text-align: center;
+    padding-top: 10px;
+
 }
 .game-area {
    background-color: #ddbea9;
+   position: relative;
+   width: 75%;
+   height: 600px;
+   left: 170px;
+}
+.player-screen {
+    height: 400px;
+    width: 400px;
+    padding: 30px 40px;
+    position: relative;
+    left: 60px;
+    
+    background-color: red;
+}
+#buttons {
+ 
+    width: 33%;
+    left: 100px;
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+}
+#scissor{
+    height: 60px;
+    width: 70px;
+    text-align: center;
+}
+#paper{
+    height: 60px;
+    width: 70px;
+    text-align: center;
+}
+#rock{
+    
+    height: 60px;
+    width: 70px;
+}
+.computer-player{
+    height: 400px;
+    width: 400px;
+    padding: 30px 40px;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    
+    background-color: red;
 }
