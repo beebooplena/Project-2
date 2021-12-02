@@ -22,10 +22,12 @@ body {
     background-color: #fbc4ab;
     text-align: center;
     padding-top: 10px;
+    height: 70px;
 
 }
 /* styling for the gaming area*/
 .game-area {
+    
    background-color: #ddbea9;
    position: relative;
    width: 75%;
@@ -38,6 +40,17 @@ body {
     padding: 30px 40px;
     position: absolute;
     left: 60px;
+    top: 30px;
+    
+    background-color: #ffe8d6;
+}
+.computer-player{
+    height: 350px;
+    width: 400px;
+    padding: 30px 40px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
     
     background-color: #ffe8d6;
 }
@@ -48,17 +61,6 @@ body {
     position: absolute;
     text-align: center;
     bottom: 50px;
-}
-/*hoover effect on player buttons*/
-
- #rock:hover{
-    background-color: #fbc4ab}
- #paper:hover{
-
-    background-color: #fbc4ab;
-}
-#scissor:hover{
-    background-color:#fbc4ab;;
 }
 
  #scissor{
@@ -83,20 +85,23 @@ body {
    font-weight: bold;
    font-size: 110%;
 }
-.computer-player{
-    height: 350px;
-    width: 400px;
-    padding: 30px 40px;
-    position: absolute;
-    right: 60px;
-    top: 20px;
-    
-    background-color: #ffe8d6;
+
+/*hoover effect on player buttons*/
+
+#rock:hover{
+    background-color: #fbc4ab}
+ #paper:hover{
+
+    background-color: #fbc4ab;
 }
+#scissor:hover{
+    background-color:#fbc4ab;;
+}
+/* Style for the the players scores*/
 .score-area > div{
     width: 50%;
     left: 65px;
-    top: 420px;
+    top: 430px;
 }
 .points-one{
     position: relative;
