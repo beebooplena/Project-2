@@ -12,14 +12,14 @@ body {
 
 }
 .footer {
-    background-color: #fbc4ab;
+    background-color: #ff758f;
     clear: both;
     position: relative;
     height: 50px;
     margin-top: -0px;
 }
 .header {
-    background-color: #fbc4ab;
+    background-color: #ff758f;
     text-align: center;
     padding-top: 10px;
     height: 70px;
@@ -31,7 +31,7 @@ body {
 /* styling for the gaming area*/
 .game-area {
     
-   background-color: #ddbea9;
+   background-color: #f5cac3;
    position: relative;
    width: 75%;
    height: 600px;
