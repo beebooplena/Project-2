@@ -106,9 +106,67 @@ body {
     
     
    
+@media screen and (max-width:1231px){
+    .game-area {
+        position: inherit;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5px;
+        height: 100%;
+       
+       
+        
+    }
+    .computer-player{position: inherit;
+        padding: 5px 2px;
+    width: 80%;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;}
+
+    .player-screen{    position: inherit;
+        
+        padding: 5px 2px;
+        width: 80%;
+        top: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;}
+        
+        #buttons {    position: inherit;
+           
+            padding: 5px;
+            width: 80%;
+            top: 0;
+            margin: 0 auto;
+            left: 0;
+            right: 0;}
+        #points{
+            width: 80%;
+            top: -200px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            position: inherit;
+          
+            
+         
+     
+            
+       
+     }
+        
+            .footer{
+             
+              margin-top: 320px;
+               
+            }
+}
 
 
- 
+    
 
   @media screen and (max-width:900px) {
         .game-area {
