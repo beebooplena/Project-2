@@ -13,7 +13,7 @@ body {
 }
 .footer {
     background-color: #ff758f;
-    clear: both;
+  
     position: relative;
     height: 50px;
     margin-top: -0px;
@@ -66,60 +66,105 @@ body {
     bottom: 50px;
 }
 
- #scissor{
+ .choices{
     height: 60px;
     width: 75px;
     text-align: center;
    font-weight: bold;
    font-size: 110%;
 }
-#paper{
+#reset{
     height: 60px;
     width: 75px;
     text-align: center;
    font-weight: bold;
    font-size: 110%;
 }
-#rock{
-    
-    height: 60px;
-    width: 75px;
-    text-align: center;
-   font-weight: bold;
-   font-size: 110%;
-}
+
 
 /*hoover effect on player buttons*/
 
-#rock:hover{
-    background-color: #fbc4ab}
- #paper:hover{
-
+.choices:hover{
+    background-color: #fbc4ab;}
+#reset:hover{
     background-color: #fbc4ab;
 }
-#scissor:hover{
-    background-color:#fbc4ab;;
-}
-/* Style for the the players scores*/
-.score-area > div{
-    width: 50%;
-    left: 65px;
-    top: 430px;
-}
-.points-one{
-    position: relative;
-    
-    
-    float: left;
-    
-    
-    clear: both;
-   
-}
 
- .points-two{
+/* Style for the the players scores*/
+
+#points{
     position: relative;
+    
+    top: 465px;
+    left: 5px;
+    
+    text-align: center;}
+
+#points > div {padding: 10px;}
+  
+    
+    
+    
    
-   
-    display: inline;
-    clear: both;}
+
+
+ 
+
+  @media screen and (max-width:900px) {
+        .game-area {
+            position: inherit;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 5px;
+            height: 100%;
+           
+           
+            
+        }
+        .computer-player{position: inherit;
+            padding: 5px 2px;
+        width: 80%;
+        top: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;}
+    
+        .player-screen{    position: inherit;
+            
+            padding: 5px 2px;
+            width: 80%;
+            top: 0;
+            margin: 0 auto;
+            left: 0;
+            right: 0;}
+            
+            #buttons {    position: inherit;
+               
+                padding: 5px;
+                width: 80%;
+                top: 0;
+                margin: 0 auto;
+                left: 0;
+                right: 0;}
+            #points{
+                width: 80%;
+                top: -200px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                position: inherit;
+              
+                
+             
+         
+                
+           
+         }
+            
+                .footer{
+                 
+                  margin-top: 320px;
+                   
+                }
+    }
