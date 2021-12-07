@@ -7,11 +7,4 @@ const imageComputer = document.getElementById('computer-image');
 const imagePlayer = document.getElementById('player-image');
 const choices = ["rock", "paper", "scissors"];
 
-function runGame()
-function generateChoice()
 
-function compareChoices()
-
-function incrementPlayerScore()
-function incrementComputerScore()
-function reset()
