@@ -10,16 +10,20 @@
 <body>
     <header class="header"> <h1>Rock paper Scissors Game!</h1></header>
     <div class="game-area">Game area
-        <div id="player-screen">game screen one
+        <div id="player-screen">
+            <img id="player-image" src="assets/images/player-image .jpg" alt="Rock Paper Scissors">
            
         </div>
 
-        <div id="computer-player">game screen two</div>
+        <div id="computer-player">game screen two
+            <img id="player-image" src="assets/images/computer-image.jpg" alt="Rock Paper Scissors">
+        </div>
        <div id="buttons">
-        <button class ="choices">Paper</button>
-        <button class= "choices">scissor</button>
-        <button class= "choices">rock</button>
-         <button onclick = "reset()"id="reset">Reset</button></div> 
+           <!--borrowed the data choice idea and aria-label idea from Project 2 Scope-->
+        <button aria-label="paper" data-choice= "0" class ="choices">Paper</button>
+        <button aria-label= "scissor" data-choice= "1" class= "choices">scissor</button>
+        <button aria-label = "rock" data-choice= "2" class= "choices">rock</button>
+         <button aria-label= "reset" onclick = "reset()"id="reset">Reset</button></div> 
         
             <div id="points">
             <div><p>Player one<span id="player-one">0</span></p></div>

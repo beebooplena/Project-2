@@ -102,7 +102,19 @@ body {
 
 #points > div {padding: 10px;}
   
+    /* Style for images */
+#player-image {
+    object-fit: container;
+    max-width: 100%;
+    max-height: 100%;
     
+}
+#computer-image {
+    object-fit: container;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
     
     
    
