@@ -37,7 +37,7 @@ body {
    height: 600px;
    left: 170px;
 }
-#player-screen {
+#player {
     height: 350px;
     width: 400px;
     padding: 30px 40px;
@@ -94,9 +94,10 @@ body {
 
 #points{
     position: relative;
+    width: 30%;
     
     top: 465px;
-    left: 5px;
+    left: 490px;
     
     text-align: center;}
 
