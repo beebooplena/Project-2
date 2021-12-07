@@ -1,39 +1,50 @@
  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header class="header"> <h1>Rock paper Scissors Game!</h1></header>
-    <div class="game-area">Game area
-        <div id="player"><p>Player</p>
-            <img id="player-image" src="assets/images/player-image .jpg" alt="Rock Paper Scissors">
-           
-        </div>
+ <html lang="en">
 
-        <div id="computer-player"><p>Computer</p>
-            <img id="player-image" src="assets/images/computer-image.jpg" alt="Rock Paper Scissors">
-        </div>
-       <div id="buttons">
-           <!--borrowed the data choice idea and aria-label idea from Project 2 Scope-->
-        <button aria-label="paper" data-choice= "0" class ="choices">Paper</button>
-        <button aria-label= "scissor" data-choice= "1" class= "choices">scissor</button>
-        <button aria-label = "rock" data-choice= "2" class= "choices">rock</button>
-         <button aria-label= "reset" onclick = "reset()"id="reset">Reset</button></div> 
-        
-            <div id="points">
-            <div><p>Player one<span id="player-one">0</span></p></div>
-       
-           <div> <p>Player two<span id="player-two">0</span> </p>
-        </div></div> 
-        
-    </div>
-   
-    <footer class="footer"></footer>
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="assets/css/style.css">
+ </head>
+
+ <body>
+     <header class="header">
+         <h1>Rock paper Scissors Game!</h1>
+     </header>
+     <div class="game-area">Game area
+         <div id="player">
+             <p>Player</p>
+             <img id="player-image" src="assets/images/player-image .jpg" alt="Rock Paper Scissors">
+
+         </div>
+
+         <div id="computer-player">
+             <p>Computer</p>
+
+         </div>
+         <div id="buttons">
+             <!--borrowed the data choice idea and aria-label idea from Project 2 Scope-->
+             <button aria-label="paper" data-choice="0" onclick="removePlayer()" class="choices">Paper</button>
+             <button aria-label="scissor" data-choice="1" onclick="showPlayer()"  class="choices">scissor</button>
+             <button aria-label="rock" data-choice="2" class="choices">rock</button>
+             <button aria-label="reset" onclick="reset()" id="reset">Reset</button></div>
+
+         <div id="points">
+             <div>
+                 <p>Player one<span id="player-one">0</span></p>
+             </div>
+
+             <div>
+                 <p>Player two<span id="player-two">0</span> </p>
+             </div>
+         </div>
+
+     </div>
+
+     <footer class="footer"></footer>
+     <script src="assets/js/script.js"></script>
+ </body>
+
+ </html>
