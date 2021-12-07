@@ -37,7 +37,7 @@ body {
    height: 600px;
    left: 170px;
 }
-.player-screen {
+#player-screen {
     height: 350px;
     width: 400px;
     padding: 30px 40px;
@@ -47,7 +47,7 @@ body {
     
     background-color: #ffe8d6;
 }
-.computer-player{
+#computer-player{
     height: 350px;
     width: 400px;
     padding: 30px 40px;
