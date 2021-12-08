@@ -8,26 +8,35 @@ const imagePlayer = document.getElementById('player-image');
 const choices = ["rock", "paper", "scissors"];
 
 
-document.addEventListener("DOMContentLoaded", function () {});
+
+
+
+
+for (let button of buttons) {
+    button.addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        runGame(playerChoice)
+    });
+}
 
 function runGame() {
+    if (playerChoice = "data-choice.0"){
+        player.innerHTML = "<img src= 'assets/images/paper.jpg'>";
+    }
+
+
+
     generateChoice()
     compareChoice()
-    computerChoice.innerHTML 
+    computerChoice()
 }
 
-function removePlayer() {
-    document.getElementById('player-image').style.display = "none";
-}
-
-function showPlayer() {
-    document.getElementById('player-image').style.display = "block";
-}
 
 function generateChoice() {
-    let ranNum = Math.floor(Math.random() * 3) + 1;
+    let ranNum = Math.floor(Math.random() * 3);
     if (ranNum == 0) {
-        document.getElementById('computer-paper').style.display = "block";
+        computerChoice = "data-choice = 0";
+
     } else if (ranNum == 1) {
         computerChoice = "data-choice = 1";
     } else if (ranNum == 2) {
