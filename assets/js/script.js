@@ -6,6 +6,9 @@ const resetBtn = document.getElementById('reset');
 const imageComputer = document.getElementById('computer-image');
 const imagePlayer = document.getElementById('player-image');
 const buttons = document.getElementsByClassName('choices');
+const divPlayerImage = document.getElementById('div-player-image');
+const divComputerImage = document.getElementById('div-computer-image');
+
 
 
 
@@ -29,55 +32,32 @@ function runGame(playerChoice) {
     let decisionButton = playerChoice;
 
     if (decisionButton === "0") {
-        let img = document.createElement("img");
-        img.src = "assets/images/paper.jpg";
-        img.style.width = "80%".top = "50%".hight = "50%".left = "250px";
-       
-        document.getElementById('player').appendChild(img);
-       
+        divPlayerImage.style.background = "url(/assets/images/paper.jpg)";
     } else if (decisionButton === "1") {
-        let img = document.createElement("img");
-        img.src = "assets/images/scissors.jpg";
-        img.setAttribute("style", "left: 50px", "size = 20%");
-        document.getElementById('player').appendChild(img);
-
+        divPlayerImage.style.background = "url(/assets/images/scissors.jpg)";
     } else if (decisionButton === "2") {
-        let img = document.createElement("img");
-        img.src = "assets/images/stone.jpg";
-        img.setAttribute("style", "left: 50px", "size = 20%");
-        document.getElementById('player').appendChild(img);
+        divPlayerImage.style.background = "url(/assets/images/stone.jpg)";
     }
+    console.log("hou")
+    generateComputerChoice()
+}
 
 
 
-
-    generateChoice()
-    compareChoice()
-    computerChoice()
-
-    function reset(event) {
-         // Stops the page from refreshing
-        let screen = document.getElementById("player");
-        screen.innerHTML = '';
-    }
-
-    
-        
-     
-
-
-
-
-    function generateChoice() {
+    function generateComputerChoice() {
+        console.log("hei")
         let ranNum = Math.floor(Math.random() * 3);
-        if (ranNum == 0) {
-            computerChoice = "data-choice = 0";
-
-        } else if (ranNum == 1) {
-            computerChoice = "data-choice = 1";
-        } else if (ranNum == 2) {
-            computerChoice = " data-choice = 2";
+        if  (ranNum == 0) {
+            divComputerImage.style.background = "url(/assets/images/paper.jpg)";
+        } else if (ranNum === 1) {
+            divComputerImage.style.background = "url(/assets/images/scissors.jpg)";
+        } else if (ranNum === 2) {
+            divComputerImage.style.background = "url(/assets/images/stone.jpg)";
         }
+        return ranNum
+
+
+
     }
 
     function compareChoice() {
@@ -99,4 +79,5 @@ function runGame(playerChoice) {
             playerResult = "You loose!";
         }
 
-    }};
+    }
+;
