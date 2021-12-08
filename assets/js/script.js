@@ -13,15 +13,32 @@ const buttons = document.getElementsByClassName('choices');
 
 
 for (let button of buttons) {
-    button.addEventListener("click", function () {
-        let playerChoice = document.querySelectorAll('[data-choice="value"]');;
-        runGame(playerChoice)
-    });
+    button.addEventListener("click",
+        function (e) {
+
+            let playerChoice = e.target.dataset.choice;
+
+            runGame(playerChoice);
+
+
+        });
 }
 
-function runGame() {
-    if (playerChoice= "data-choice = 0"){
-        playerChoice.innerHTML = "<img src= 'assets/images/paper.jpg'>";
+function runGame(playerChoice) {
+    let decisionButton = playerChoice;
+   
+    if (decisionButton === "0") {
+        let img = document.createElement("img");
+        img.src = "assets/images/paper.jpg";
+        document.getElementById('player').appendChild(img);
+        let div = document.getElementById('player').appendChild(img);
+        div.setAttribute("style", "size: 50% ");
+    
+     
+        
+        
+        
+
     }
 
 
