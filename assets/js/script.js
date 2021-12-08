@@ -5,7 +5,7 @@ const playerChoice = document.getElementById('player');
 const resetBtn = document.getElementById('reset');
 const imageComputer = document.getElementById('computer-image');
 const imagePlayer = document.getElementById('player-image');
-const choices = ["rock", "paper", "scissors"];
+const buttons = document.getElementsByClassName('choices');
 
 
 
@@ -14,14 +14,14 @@ const choices = ["rock", "paper", "scissors"];
 
 for (let button of buttons) {
     button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
+        let playerChoice = document.querySelectorAll('[data-choice="value"]');;
         runGame(playerChoice)
     });
 }
 
 function runGame() {
-    if (playerChoice = "data-choice.0"){
-        player.innerHTML = "<img src= 'assets/images/paper.jpg'>";
+    if (playerChoice= "data-choice = 0"){
+        playerChoice.innerHTML = "<img src= 'assets/images/paper.jpg'>";
     }
 
 
