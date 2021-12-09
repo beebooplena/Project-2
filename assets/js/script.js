@@ -32,11 +32,11 @@ function runGame(playerChoice) {
     let decisionButton = playerChoice;
 
     if (decisionButton === "0") {
-        divPlayerImage.style.background = "url(../../assets/images/paper.jpg)";
+        divPlayerImage.style.background = "url(assets/images/paper.jpg)";
     } else if (decisionButton === "1") {
-        divPlayerImage.style.background = "url(../../assets/images/scissors.jpg)";
+        divPlayerImage.style.background = "url(assets/images/scissors.jpg)";
     } else if (decisionButton === "2") {
-        divPlayerImage.style.background = "url(../../assets/images/stone.jpg)";
+        divPlayerImage.style.background = "url(assets/images/stone.jpg)";
     }
     
     let computerChoice = generateComputerChoice()
@@ -66,11 +66,11 @@ function generateComputerChoice() {
   
     let ranNum = Math.floor(Math.random() * 3);
     if (ranNum == 0) {
-        divComputerImage.style.background = "url(/assets/images/paper.jpg)";
+        divComputerImage.style.background = "url(assets/images/paper.jpg)";
     } else if (ranNum === 1) {
-        divComputerImage.style.background = "url(/assets/images/scissors.jpg)";
+        divComputerImage.style.background = "url(assets/images/scissors.jpg)";
     } else if (ranNum === 2) {
-        divComputerImage.style.background = "url(/assets/images/stone.jpg)";
+        divComputerImage.style.background = "url(assets/images/stone.jpg)";
     } divComputerImage.style.backgroundSize = "contain";
     return ranNum
 
@@ -81,9 +81,9 @@ function generateComputerChoice() {
 function reset(){
     document.getElementById("player-two").innerText = "0";
     document.getElementById("player-one").innerText = "0";
-    divPlayerImage.style.backgroundImage = "url(/assets/images/computer-image.jpg)";
+    divPlayerImage.style.backgroundImage = "url(assets/images/computer-image.jpg)";
     divPlayerImage.style.backgroundSize = "contain";
-    divComputerImage.style.backgroundImage = "url(/assets/images/computer-image.jpg)";
+    divComputerImage.style.backgroundImage = "url(assets/images/computer-image.jpg)";
     divComputerImage.style.backgroundSize = "contain";
 
 
