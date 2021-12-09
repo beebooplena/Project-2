@@ -38,7 +38,7 @@ function runGame(playerChoice) {
     } else if (decisionButton === "2") {
         divPlayerImage.style.background = "url(/assets/images/stone.jpg)";
     }
-    console.log("hou")
+    
     let computerChoice = generateComputerChoice()
     compareChoice(computerChoice, decisionButton)
 
@@ -47,18 +47,23 @@ function runGame(playerChoice) {
 function playerScore() {
 
     let playerResult = parseInt(document.getElementById("player-one").innerText);
-    document.getElementById("player-one").innerText = ++playerResult;
+    document.getElementById("player-one").innerText = ++playerResult; 
+    if(playerResult > 4){alert("You Are The Winner!");
+reset()}
+    
+
 }
-console.log("iiii");
+
 
 function computerScore() {
     let computerResult = parseInt(document.getElementById("player-two").innerText);
     document.getElementById("player-two").innerText = ++computerResult;
+    if(computerResult > 4){alert("Computer Is The Winner!"); reset()}
 
 }
 
 function generateComputerChoice() {
-    console.log("hei")
+  
     let ranNum = Math.floor(Math.random() * 3);
     if (ranNum == 0) {
         divComputerImage.style.background = "url(/assets/images/paper.jpg)";
@@ -66,9 +71,20 @@ function generateComputerChoice() {
         divComputerImage.style.background = "url(/assets/images/scissors.jpg)";
     } else if (ranNum === 2) {
         divComputerImage.style.background = "url(/assets/images/stone.jpg)";
-    }
+    } divComputerImage.style.backgroundSize = "contain";
     return ranNum
 
+
+
+}
+
+function reset(){
+    document.getElementById("player-two").innerText = "0";
+    document.getElementById("player-one").innerText = "0";
+    divPlayerImage.style.backgroundImage = "url(/assets/images/computer-image.jpg)";
+    divPlayerImage.style.backgroundSize = "contain";
+    divComputerImage.style.backgroundImage = "url(/assets/images/computer-image.jpg)";
+    divComputerImage.style.backgroundSize = "contain";
 
 
 }
@@ -92,30 +108,5 @@ function compareChoice(computerChoice, decisionChoice) {
         
         computerScore()
     } else if (decisionChoice == 1 && computerChoice == 2) 
-    computerScore()
+    computerScore()}
 
-console.log("aaa");
-if (decisionChoice == computerChoice) {
-    alert("It`s a draw");
-} else if (decisionChoice == 1 && computerChoice == 0) {
-    alert("You Win!");
-   
-} else if (decisionChoice == 0 && computerChoice == 2) {
-    ("You Win!");
-   
-} else if (decisionChoice == 2 && computerChoice == 1) {
-    alert("You Win!");
-   
-} else if (decisionChoice == 2 && computerChoice == 0) {
-    alert("You Loose!");
-    
-} else if (decisionChoice == 0 && computerChoice == 1) {
-    alert("You Loose!");
-    
-} else if (decisionChoice == 1 && computerChoice == 2) alert("You Loose!");
-
-}
-
-
-
-;

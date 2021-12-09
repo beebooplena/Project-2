@@ -138,15 +138,17 @@ body {
 
     background-size: cover;
     width: 100%;
-    height: 95%;
-    background-image: url('/assets/images/player-image\ .jpg');
+    height: 90%;
+    object-fit: contain;
+    
+    background-image: url('/assets/images/computer-image.jpg');
 }
 
 #div-computer-image {
     background-size: cover;
     width: 100%;
     height: 95%;
-    background-image: url('/assets/images/player-image\ .jpg');
+    background-image: url('/assets/images/computer-image.jpg');
 }
 
 
