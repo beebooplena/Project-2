@@ -32,11 +32,11 @@ function runGame(playerChoice) {
     let decisionButton = playerChoice;
 
     if (decisionButton === "0") {
-        divPlayerImage.style.background = "url(/assets/images/paper.jpg)";
+        divPlayerImage.style.background = "url(assets/images/paper.jpg)";
     } else if (decisionButton === "1") {
-        divPlayerImage.style.background = "url(/assets/images/scissors.jpg)";
+        divPlayerImage.style.background = "url(assets/images/scissors.jpg)";
     } else if (decisionButton === "2") {
-        divPlayerImage.style.background = "url(/assets/images/stone.jpg)";
+        divPlayerImage.style.background = "url(assets/images/stone.jpg)";
     }
     console.log("hou")
     let computerChoice = generateComputerChoice()
@@ -61,11 +61,11 @@ function generateComputerChoice() {
     console.log("hei")
     let ranNum = Math.floor(Math.random() * 3);
     if (ranNum == 0) {
-        divComputerImage.style.background = "url(/assets/images/paper.jpg)";
+        divComputerImage.style.background = "url(assets/images/paper.jpg)";
     } else if (ranNum === 1) {
-        divComputerImage.style.background = "url(/assets/images/scissors.jpg)";
+        divComputerImage.style.background = "url(assets/images/scissors.jpg)";
     } else if (ranNum === 2) {
-        divComputerImage.style.background = "url(/assets/images/stone.jpg)";
+        divComputerImage.style.background = "url(assets/images/stone.jpg)";
     }
     return ranNum
 
