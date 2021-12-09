@@ -50,6 +50,9 @@ body {
     position: absolute;
     left: 60px;
     top: 30px;
+    font-size: 130%;
+    font-weight: bold;
+    color:rgb(255, 0, 212);
 
     background-color: #ffe8d6;
 }
@@ -61,6 +64,9 @@ body {
     position: absolute;
     right: 60px;
     top: 30px;
+    font-size: 130%;
+    font-weight: bold;
+    color: blue;
 
     background-color: #ffe8d6;
 }
@@ -119,7 +125,7 @@ body {
 #player-one{
     padding: 8px;
     font-size: 150%;
-    color: rgb(0, 38, 255);
+    color: rgb(255, 0, 212);
 }
 #player-two {
     padding:8px;
