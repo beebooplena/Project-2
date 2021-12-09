@@ -32,11 +32,11 @@ function runGame(playerChoice) {
     let decisionButton = playerChoice;
 
     if (decisionButton === "0") {
-        divPlayerImage.style.background = "url(/assets/images/paper.jpg)";
+        divPlayerImage.style.background = "url(../../assets/images/paper.jpg)";
     } else if (decisionButton === "1") {
-        divPlayerImage.style.background = "url(/assets/images/scissors.jpg)";
+        divPlayerImage.style.background = "url(../../assets/images/scissors.jpg)";
     } else if (decisionButton === "2") {
-        divPlayerImage.style.background = "url(/assets/images/stone.jpg)";
+        divPlayerImage.style.background = "url(../../assets/images/stone.jpg)";
     }
     
     let computerChoice = generateComputerChoice()
