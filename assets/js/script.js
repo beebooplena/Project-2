@@ -39,10 +39,22 @@ function runGame(playerChoice) {
         divPlayerImage.style.background = "url(/assets/images/stone.jpg)";
     }
     console.log("hou")
-    generateComputerChoice()
+    let computerChoice = generateComputerChoice()
+    compareChoice(computerChoice, decisionButton)
+
 }
 
+function playerScore() {
 
+    let playerResult = parseInt(document.getElementById("player-one").innerText);
+    document.getElementById("player-one").innerText = ++playerResult;
+   }
+
+   function computerScore() {
+    let computerResult = parseInt(document.getElementById("player-two").innerText);
+ document.getElementById("player-two").innerText = ++computerResult;
+console.log(iiii);
+}
 
     function generateComputerChoice() {
         console.log("hei")
@@ -60,24 +72,11 @@ function runGame(playerChoice) {
 
     }
 
-    function compareChoice() {
-        if (playerChoice === computerChoice) {
-            playerResult,
-            computerResult = "It`s a draw!";
-        }
-        else if (playerChoice == "data-choice = 0" && computerChoice == "data-choice = 2") {
-            playerResult = "You Win!";
-        } else if (playerChoice == "data-choice = 1" && computerChoice == "data-choice = 0") {
-            playerResult = "You Win!";
-        } else if (playerChoice == "data-choice = 2" && computerChoice == "data-choice = 1") {
-            playerResult = "You Win!";
-        } else if (playerChoice == "data-choice = 2" && computerChoice == "data-choice = 0") {
-            playerResult = "You loose";
-        } else if (playerChoice == "data-choice = 0" && computerChoice == "data-choice = 1") {
-            playerResult = "You loose!";
-        } else if (playerChoice == "data-choice = 1" && computerChoice == "data-choice = 2") {
-            playerResult = "You loose!";
-        }
+    function compareChoice(computerChoice, playerChoice) { 
+        if (playerChoice == computerChoice){playerResult ="It`s a draw";
+      } else if(playerChoice == 1 && computerChoice == 0){playerResult = "You Win!";
+    playerScore()}
+        
 
     }
 ;
