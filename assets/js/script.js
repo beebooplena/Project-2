@@ -37,7 +37,7 @@ function runGame(playerChoice) {
 
 function playerScore() {
 
-    const playerResult = parseInt(document.getElementById("player-one").innerText);
+    let playerResult = parseInt(document.getElementById("player-one").innerText);
     document.getElementById("player-one").innerText = ++playerResult;
     if (playerResult > 4) {
         alert("You Are The Winner!");
@@ -46,7 +46,7 @@ function playerScore() {
 }
 
 function computerScore() {
-    const computerResult = parseInt(document.getElementById("player-two").innerText);
+    let computerResult = parseInt(document.getElementById("player-two").innerText);
     document.getElementById("player-two").innerText = ++computerResult;
     if (computerResult > 4) {
         alert("Computer Is The Winner!");
@@ -65,7 +65,8 @@ function generateComputerChoice() {
     } else if (ranNum === 2) {
         divComputerImage.style.background = "url(assets/images/stone.jpg)";
     }
-    divComputerImage.style.backgroundSize = "contain";
+    
+    divComputerImage.style.backgroundRepeat = "no-repeat";
     return ranNum;
 }
 

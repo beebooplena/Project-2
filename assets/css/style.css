@@ -117,10 +117,19 @@ body {
     padding: 10px;
 }
 #player-one{
-    padding: 6px;
+    padding: 8px;
+    font-size: 150%;
+    color: rgb(0, 38, 255);
 }
 #player-two {
-    padding:6px;
+    padding:8px;
+    font-size: 150%;
+    color: rgb(0, 38, 255);
+}
+.players {
+    font-size: 130%;
+    font-weight: bold;
+    
 }
 
 /* Style for images */
