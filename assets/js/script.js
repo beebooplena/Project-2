@@ -49,7 +49,7 @@ function computerScore() {
     let computerResult = parseInt(document.getElementById("player-two").innerText);
     document.getElementById("player-two").innerText = ++computerResult;
     if (computerResult > 4) {
-        alert("Computer Is The Winner!");
+        alert("Computer Wins!");
         reset()
     }
 
