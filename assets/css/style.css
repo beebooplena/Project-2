@@ -116,6 +116,12 @@ body {
 #points>div {
     padding: 10px;
 }
+#player-one{
+    padding: 6px;
+}
+#player-two {
+    padding:6px;
+}
 
 /* Style for images */
 #player-image {
