@@ -8,8 +8,8 @@
 
 /* style for the body of html */
 body {
-    font-family: Fuzzy Bubbles, sans-serif;
-    font: weight 400px;
+    font-family: "Fuzzy Bubbles",sans-serif;
+    font-weight: 400;
     background-color: #ffe8d6;
 }
 
@@ -135,14 +135,12 @@ body {
 
 /* Style for the start images */
 #player-image {
-    object-fit: container;
     max-width: 100%;
     max-height: 100%;
     background-repeat: no-repeat;
 }
 
 #computer-image {
-    object-fit: container;
     max-width: 100%;
     max-height: 95%;
     background-repeat: no-repeat;

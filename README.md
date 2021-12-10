@@ -1,4 +1,39 @@
-# Lunar`s life
+
+# Table of Contents
+1. [Example](#example)
+2. [Example2](#example2)
+# Rock Paper Scissors Game
+This is a webpage were children and adults can play a simple game, that is well known in big parts of the world. The site is clean with gentle colours for the eyes. Easy to understand, using colours to determinate which is computer and human. Or you can read the text or follow the icons. The game has a level of difficulty, because the one hwo gets 5 points first, is the winner. You can also decide to reset the game while you are playing. 
+# Ux and UI
+**Research**
+I know that a lot of people know this game, and know the rules. I have worked as a teacher for many years and know that especially children
+are using this game to decide over things they want do or just play this simple game for having fun.
+## Owner`s goal
+* To have a webpage that offers simple and an easy game for people.
+* To get more and more people that wants to use the game.
+## User`s goals
+* Children and adults can use this game to play a simple game to have fun.
+* Children and adults can play this game to help deciding what to do next. One example can be that a teacher can use this game
+in the classroom If the teacher wins over the computer, the students can play outside, if computer wins, the students can play inside.
+* For people that wants to play a simple game.
+
+## User Stories
+
+* I visited the site for the first time, as a user I want to know what kind of webpage this is.
+* As a user I want the webpage to be easy to use, clean and easy to understand.
+* As a user I want to play the game without having problems playing it or understand it.
+* As a user I want the webpage to be responsive if I want to use computer or mobile phone.
+
+## wireframe and responsive web design
+![wireframe](assets/images/wireframe.png)
+![responsive](assets/images/responsive.png)
+
+
+
+
+
+
+# Rock Paper Scissors Game
 
 
 

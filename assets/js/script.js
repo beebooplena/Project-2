@@ -1,10 +1,6 @@
-const playerResult = document.getElementById('player-one');
-const computerResult = document.getElementById('player-two');
+
 const computerChoice = document.getElementById('computer-player');
 const playerChoice = document.getElementById('player');
-const resetBtn = document.getElementById('reset');
-const imageComputer = document.getElementById('computer-image');
-const imagePlayer = document.getElementById('player-image');
 const buttons = document.getElementsByClassName('choices');
 const divPlayerImage = document.getElementById('div-player-image');
 const divComputerImage = document.getElementById('div-computer-image');
@@ -31,8 +27,8 @@ function runGame(playerChoice) {
         divPlayerImage.style.background = "url(assets/images/stone.jpg)";
     }
 
-    const computerChoice = generateComputerChoice()
-    compareChoice(computerChoice, playerChoice)
+    const computerChoice = generateComputerChoice();
+    compareChoice(computerChoice, playerChoice);
 }
 /**
  * borrowed this code from Love Math project and added more code to it.
@@ -45,7 +41,7 @@ function playerScore() {
     document.getElementById("player-one").innerText = ++playerResult;
     if (playerResult > 4) {
         alert("You Are The Winner!");
-        reset()
+        reset();
     }
 }
 /**
@@ -58,7 +54,7 @@ function computerScore() {
     document.getElementById("player-two").innerText = ++computerResult;
     if (computerResult > 4) {
         alert("Computer Wins!");
-        reset()
+        reset();
     }
 
 }
@@ -105,19 +101,19 @@ function compareChoice(computerChoice, decisionChoice) {
 
     } else if (decisionChoice == 1 && computerChoice == 0) {
 
-        playerScore()
+        playerScore();
     } else if (decisionChoice == 0 && computerChoice == 2) {
 
-        playerScore()
+        playerScore();
     } else if (decisionChoice == 2 && computerChoice == 1) {
 
-        playerScore()
+        playerScore();
     } else if (decisionChoice == 2 && computerChoice == 0) {
 
-        computerScore()
+        computerScore();
     } else if (decisionChoice == 0 && computerChoice == 1) {
 
-        computerScore()
+        computerScore();
     } else if (decisionChoice == 1 && computerChoice == 2)
-        computerScore()
+        computerScore();
 }
