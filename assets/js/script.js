@@ -1,9 +1,9 @@
-
 const computerChoice = document.getElementById('computer-player');
 const playerChoice = document.getElementById('player');
 const buttons = document.getElementsByClassName('choices');
 const divPlayerImage = document.getElementById('div-player-image');
 const divComputerImage = document.getElementById('div-computer-image');
+
 
 for (let button of buttons) {
     button.addEventListener("click",
@@ -13,6 +13,7 @@ for (let button of buttons) {
             runGame(playerChoice);
         });
 }
+
 
 /**
  * This function display different images from the playerChoice values.
