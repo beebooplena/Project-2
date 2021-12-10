@@ -19,7 +19,7 @@ for (let button of buttons) {
 }
 
 /**
- * 
+ * This function display different images from the playerChoice values.
  * @param {string} playerChoice Button clicked by player.
  */
 function runGame(playerChoice) {
@@ -34,7 +34,11 @@ function runGame(playerChoice) {
     const computerChoice = generateComputerChoice()
     compareChoice(computerChoice, playerChoice)
 }
-
+/**
+ * borrowed this code from Love Math project and added more code to it.
+ * This function add 1 point and keep track of old scores.
+ * when the points reach 5 it alerts.
+ */
 function playerScore() {
 
     let playerResult = parseInt(document.getElementById("player-one").innerText);
@@ -44,7 +48,11 @@ function playerScore() {
         reset()
     }
 }
-
+/**
+ * borrowed this code from Love Math project and added more code to it.
+ * This function add 1 point and keep track of old scores.
+ * when the points reach 5 it alerts.
+ */
 function computerScore() {
     let computerResult = parseInt(document.getElementById("player-two").innerText);
     document.getElementById("player-two").innerText = ++computerResult;
@@ -54,7 +62,10 @@ function computerScore() {
     }
 
 }
-
+/** This function generate a random number from 0-2.
+ * An image will be displayed when a number is given.
+ * @returns numbers
+ */
 function generateComputerChoice() {
 
     const ranNum = Math.floor(Math.random() * 3);
@@ -65,11 +76,14 @@ function generateComputerChoice() {
     } else if (ranNum === 2) {
         divComputerImage.style.background = "url(assets/images/stone.jpg)";
     }
-    
+
     divComputerImage.style.backgroundRepeat = "no-repeat";
     return ranNum;
 }
-
+/**
+ * This function reset the images and displays the start images.
+ * It reset the results to 0.
+ */
 function reset() {
     document.getElementById("player-two").innerText = "0";
     document.getElementById("player-one").innerText = "0";
@@ -80,7 +94,12 @@ function reset() {
     divComputerImage.style.backgroundSize = "contain";
     divComputerImage.style.backgroundRepeat = "no-repeat";
 }
-
+/**
+ * This function compare if choices are true, and the winner gets 1 point by adding
+ * either playerScore() or computerScore().
+ * @param {number} computerChoice 
+ * @param {number} decisionChoice 
+ */
 function compareChoice(computerChoice, decisionChoice) {
     if (decisionChoice == computerChoice) {
 

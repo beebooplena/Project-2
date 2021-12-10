@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
 
+/* borrowed some of this * code from Love Running project */
 * {
     margin: 0;
-
     border: none;
 }
 
+/* style for the body of html */
 body {
     font-family: Fuzzy Bubbles, sans-serif;
     font: weight 400px;
     background-color: #ffe8d6;
-
 }
 
 .footer {
     background-color: #ff758f;
-
     position: relative;
     height: 50px;
     margin-top: -0px;
@@ -30,12 +29,10 @@ body {
 
 .header h1 {
     padding-top: 10px;
-
 }
 
 /* styling for the gaming area*/
 .game-area {
-
     background-color: #f5cac3;
     position: relative;
     width: 75%;
@@ -52,8 +49,7 @@ body {
     top: 30px;
     font-size: 130%;
     font-weight: bold;
-    color:rgb(255, 0, 212);
-
+    color: rgb(255, 0, 212);
     background-color: #ffe8d6;
 }
 
@@ -67,12 +63,12 @@ body {
     font-size: 130%;
     font-weight: bold;
     color: blue;
-
     background-color: #ffe8d6;
 }
 
-#buttons {
+/*Style for the buttons*/
 
+#buttons {
     width: 33%;
     left: 100px;
     position: absolute;
@@ -96,7 +92,6 @@ body {
     font-size: 110%;
 }
 
-
 /*hoover effect on player buttons*/
 
 .choices:hover {
@@ -112,58 +107,52 @@ body {
 #points {
     position: relative;
     width: 30%;
-
     top: 465px;
     left: 490px;
-
     text-align: center;
 }
 
 #points>div {
     padding: 10px;
 }
-#player-one{
+
+#player-one {
     padding: 8px;
     font-size: 150%;
     color: rgb(255, 0, 212);
 }
+
 #player-two {
-    padding:8px;
+    padding: 8px;
     font-size: 150%;
     color: rgb(0, 38, 255);
 }
+
 .players {
     font-size: 130%;
     font-weight: bold;
-    
 }
 
-/* Style for images */
+/* Style for the start images */
 #player-image {
     object-fit: container;
     max-width: 100%;
     max-height: 100%;
     background-repeat: no-repeat;
-
-
 }
 
 #computer-image {
-
     object-fit: container;
     max-width: 100%;
     max-height: 95%;
     background-repeat: no-repeat;
-
 }
 
 #div-player-image {
-
     background-size: cover;
     width: 100%;
     height: 90%;
     object-fit: contain;
-    
     background-image: url('../../assets/images/computer-image.jpg');
 }
 
@@ -174,18 +163,16 @@ body {
     background-image: url('../../assets/images/computer-image.jpg');
 }
 
+/*style for the media queries*/
 
 @media screen and (max-width:900px) {
     #computer-player {
-
         position: inherit;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
         left: 0;
-        padding:0;
-
-
+        padding: 0;
     }
 
     #div-computer-image {
@@ -196,13 +183,12 @@ body {
     }
 
     #player {
-
         position: inherit;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
         left: 0;
-        padding:0;
+        padding: 0;
     }
 
     #div-player-image {
@@ -212,43 +198,33 @@ body {
         margin-right: 10%;
     }
 
-
-
-.game-area {
-    
- 
-    
-   
-    height: auto;
-    position: inherit;
+    .game-area {
+        height: auto;
+        position: inherit;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-    
-    
- 
-}
-#points {
-    position: inherit;
+    }
+
+    #points {
+        position: inherit;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-}
+    }
 
-#buttons {
-    position: inherit;
+    #buttons {
+        position: inherit;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
         height: 55px;
         font-size: 100%;
-}
-#footer {
-    position: inherit;
-    margin-top: -200px;
-    clear: both;
-    
-        
-}
+    }
 
+    #footer {
+        position: inherit;
+        margin-top: -200px;
+        clear: both;
+    }
 }
