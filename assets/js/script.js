@@ -26,8 +26,10 @@ function runGame(playerChoice) {
         divPlayerImage.style.background = "url(assets/images/scissors.jpg)";
     } else if (playerChoice === "2") {
         divPlayerImage.style.background = "url(assets/images/stone.jpg)";
-    }
-
+    } 
+    divPlayerImage.style.backgroundRepeat = "no-repeat";
+    divPlayerImage.style.backgroundPosition = "center";
+    divPlayerImage.style.backgroundSize= "cover";
     const computerChoice = generateComputerChoice();
     compareChoice(computerChoice, playerChoice);
 }
@@ -75,6 +77,8 @@ function generateComputerChoice() {
     }
 
     divComputerImage.style.backgroundRepeat = "no-repeat";
+    divComputerImage.style.backgroundPosition = "center";
+    divComputerImage.style.backgroundSize= "cover";
     return ranNum;
 }
 /**
