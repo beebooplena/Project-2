@@ -226,9 +226,11 @@ body {
     }
     .choices {
         position: inherit;
-        width: 45px;
+        width: 50px;
         height: 45px;
         text-align: center;
+        padding: 2px;
+        margin: 2px;
     }
     #reset {
         position: inherit;
@@ -238,7 +240,7 @@ body {
     }
     #buttons {
         position: inherit;
-        width: 90%;
+        width: 95%;
         margin-left: 5%;
         margin-right: 5%;
         height: 65px;

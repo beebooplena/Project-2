@@ -1,7 +1,7 @@
 
 
 # Welcome To The Rock Paper Scissors Game!
-This is a webpage were children and adults can play a simple game, that is well known in big parts of the world. The site is clean with gentle colours for the eyes. Easy to understand, using colours to determinate which is computer or human. Or you can read the text or follow the icons. The game has a level of difficulty, because the one hwo get 5 points first, is the winner. You can also decide to reset the game while you are playing. 
+This is a webpage where children and adults can play a simple and well known game, known all over the world. The site is clean with gentle colours. It is easy to understand, using colours to determinate which is computer or human, or you can read the text or follow the icons. The game has a level of difficulty, because the one hwo get 5 points first, is the winner. You can also decide to reset the game while you are playing. 
 
 ![responsive](assets/images/responsive.png)
 ## Ux and UI
@@ -14,7 +14,7 @@ are using this game to decide over things they want do or just play this simple 
 ### User`s goals
 * Children and adults can use this game to play a simple game to have fun.
 * Children and adults can play this game to help deciding what to do next. One example can be that a teacher can use this game
-in the classroom If the teacher wins over the computer, the students can play outside, if computer wins, the students can play inside.
+in the classroom. If the teacher wins over the computer, the students can play outside, if computer wins, the students can play inside.
 * For people that wants to play a simple game.
 
 ### User Stories
@@ -36,7 +36,7 @@ the font reflect the mission of the webpage. To have fun and play the rock paper
 ![fuzzy bubbles](assets/images/logo.png)
 
 ### Colours
-I used colours from coolors.co where the site generates colour schemes. I choosed bright colours that mixed well together
+I used colours from coolors.co where the site generates colour schemes. I choose bright colours that mixed well together
 and colours that would highlight the image screens for human and computer player. I also used different colours to the human and computer, so it will be easier to see the results.
 
 ### Images
@@ -57,7 +57,7 @@ The webpage has only one page and the user can see the whole game and it`s conte
 ![Landing-page](assets/images/Landing-page.png)
 
 ### Results
-The Result section shows who are the players and the results. The results shares the same colours as the players. The user can easily understand where to look by reading, by colour or by icon.
+The Result section shows who are the players, and the results. The results shares the same colours as the players. The user can easily understand where to look by reading, by colour or by icon.
 the winner is the player that receives 5 points first.
 
 ![Results](assets/images/results.png)
@@ -125,7 +125,7 @@ Making sure the computer screen is now generating an image of the three choices 
 #### Javascript
 * The JShint Javascript code quality tool showed no errors when tested, but showed one warning:
 "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (runGame)"
-To fix this warning, I could try to to make the loop in to an own function, that would return playerChoice.
+To fix this warning, I could try to to make the loop in to it`s own function, that would return playerChoice.
 
 #### Metrics from Jshint
 * There are 8 functions in this file.
@@ -148,7 +148,7 @@ To fix this warning, I could try to to make the loop in to an own function, that
 
 * When I tried to add a hoover effect on the buttons, I saw that the effect din`t work. I used chrome development tool and found out that the div for the result, used the same space as the buttons. When I made the result div smallar, the hoover effect on the buttons worked.
 
-* I tried to make the function compareChoices() to work, but it didn`t work at all. First i wrote a console.log(hello), at the bottom of the function, to see if it runs trough the code but it didn't. I found out that I had given the numbers a string and not a number. I had written it like this:
+* I tried to make the function compareChoices() to work, but it didn`t work at all. First I wrote a console.log(hello), at the bottom of the function, to see if it runs trough the code, but it didn't. I found out that I had given the numbers a string and not a number. I had written it like this:
 else if (decisionChoice == "1" && computerChoice == "0"). It worked when I removed the strings and wrote it like this:
 else if (decisionChoice == 1 && computerChoice == 0). My function finally worked.
 
@@ -230,4 +230,4 @@ document.addEventListener("DOMContentLoaded", function() {
 * I used icons from fontawesome.
 ### Media
 
-* I took the pictures of rock, paper and scissors and used the pictures in the game.
+* I took the pictures of rock, paper and scissors and used the pictures in the game, and I am the owner of these photos.
