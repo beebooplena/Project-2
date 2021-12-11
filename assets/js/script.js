@@ -4,7 +4,7 @@ const buttons = document.getElementsByClassName('choices');
 const divPlayerImage = document.getElementById('div-player-image');
 const divComputerImage = document.getElementById('div-computer-image');
 
-
+// I borrowed let button of buttons with eventlistener from Love Math project.
 for (let button of buttons) {
     button.addEventListener("click",
         function (e) {

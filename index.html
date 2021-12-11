@@ -14,6 +14,7 @@
          <h1>Rock Paper Scissors Game! <i class="fas fa-hand-rock"></i>
          </h1>
      </header>
+     <!-- Area for the game and for the players -->
      <div class="game-area">
          <div id="player">
              <p><i class="fas fa-user"></i> Human </p>
@@ -24,19 +25,20 @@
              <p><i class="fas fa-robot"></i>Computer </p>
              <div id="div-computer-image"></div>
          </div>
+         <!-- Buttons -->
          <div id="buttons">
              <!--borrowed the data choice idea and aria-label idea from Project 2 Scope-->
              <button aria-label="paper" data-choice="0" class="choices">Paper</button>
              <button aria-label="scissor" data-choice="1" class="choices">scissor</button>
              <button aria-label="rock" data-choice="2" class="choices">rock</button>
              <button aria-label="reset" onclick="reset()" id="reset">Reset</button></div>
-
+         <!-- Divs for results -->
          <div id="points">
-             <div class = "players">
+             <div class="players">
                  <p><i class="fas fa-user"></i> Human Result:<span id="player-one">0</span></p>
              </div>
 
-             <div class = "players">
+             <div class="players">
                  <p><i class="fas fa-robot"></i> Computer Result:<span id="player-two">0</span> </p>
              </div>
          </div>
